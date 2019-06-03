@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText volNum;
     EditText iterNum;
     private Button btnMove;
+    public static final String EXTRA_TEXT1 = "com.example.application.example.EXTRA_TEXT1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +56,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void moveButton(){
+        EditText editText1 = (EditText) findViewById(R.id.BusesQ);
+        String text1 = editText1.getText().toString();
+
         Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        intent.putExtra(EXTRA_TEXT1, text1);
         startActivity(intent);
     }
 }
