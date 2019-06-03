@@ -105,7 +105,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="#00BCD4"
-        android:onClick="saveButton"
+        android:onClick="saveButton2"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +115,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/Jacobiano"
+        android:id="@+id/Iterations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -124,7 +124,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="Jacobiano"
+        android:hint="Number of iterations"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.126"
@@ -142,13 +142,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="#F44336"
-        android:onClick="saveButton"
+        android:onClick="saveButton3"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Jacobiano"
+        app:layout_constraintTop_toBottomOf="@+id/Iterations"
         app:layout_constraintVertical_bias="0.098" />
 
     <Button

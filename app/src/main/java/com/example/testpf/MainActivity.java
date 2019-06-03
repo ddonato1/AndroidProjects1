@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText busNum;
     EditText volNum;
-    EditText jacNum;
+    EditText iterNum;
     private Button btnMove;
 
     @Override
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         busNum = findViewById(R.id.BusesQ);
         volNum = findViewById(R.id.Voltage);
+        iterNum = findViewById(R.id.Iterations);
 
         btnMove = findViewById(R.id.buttonPart2);
         btnMove.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +38,20 @@ public class MainActivity extends AppCompatActivity {
         int busNUMF = Integer.parseInt(buses);
 
         Toast.makeText(this, "Answer has been saved " +busNUMF, Toast.LENGTH_SHORT).show();
+    }
+
+    public void saveButton2(View view){
+        String voltages = volNum.getText().toString();
+        int volNUMF = Integer.parseInt(voltages);
+
+        Toast.makeText(this, "Answer has been saved " +volNUMF, Toast.LENGTH_SHORT).show();
+    }
+
+    public void saveButton3(View view){
+        String iterations = volNum.getText().toString();
+        int iterNUMF = Integer.parseInt(iterations);
+
+        Toast.makeText(this, "Answer has been saved " +iterNUMF, Toast.LENGTH_SHORT).show();
     }
 
     private void moveButton(){
